@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SocialBook</title>
+
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ************ Nav-bar *********** -->
+    <nav>
+      <div class="nav-left">
+        <a href="index.html"
+          ><img src="images/logo.png" alt="logo img" class="logo"
+        /></a>
+
+        <ul>
+          <li class="nav-left-icons">
+            <img src="images/notification.png" alt="" />
+          </li>
+          <li class="nav-left-icons"><img src="images/inbox.png" alt="" /></li>
+          <li class="nav-left-icons"><img src="images/video.png" alt="" /></li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <div class="search-box">
+          <img src="images/search.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+          <img src="backgrounds/14.jpg" alt="" />
+        </div>
+      </div>
+
+      <!-- ************ Settings-Menu *********** -->
+      <div class="settings-menu">
+        <div class="dark-btn" onclick="darkonclick()">
+          <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+          <div class="user-profile">
+            <img src="backgrounds/14 - Copy.jpg" alt="" />
+            <div>
+              <p>Vortex</p>
+              <a href="profile.html">See your profile</a>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="user-profile">
+            <img src="images/feedback.png" alt="" />
+            <div>
+              <p>Give Feedback</p>
+              <a href="#">Help us to improve</a>
+            </div>
+          </div>
+          <hr />
+
+          <div class="setting-links">
+            <img src="images/setting.png" alt="" class="settings-icon" />
+            <a href="#">
+              Settings & Privacy
+              <img src="images/arrow.png" class="arrow-img" width="10px" alt=""
+            /></a>
+          </div>
+
+          <div class="setting-links">
+            <img src="images/help.png" alt="" class="settings-icon" />
+            <a href="#">
+              Help & Support
+              <img src="images/arrow.png" class="arrow-img" width="10px" alt=""
+            /></a>
+          </div>
+
+          <div class="setting-links">
+            <img src="images/display.png" alt="" class="settings-icon" />
+            <a href="#">
+              Display & Accessibility
+              <img src="images/arrow.png" class="arrow-img" width="10px" alt=""
+            /></a>
+          </div>
+
+          <div class="setting-links">
+            <img src="images/logout.png" alt="" class="settings-icon" />
+            <a href="#">
+              Logout
+              <img
+                src="images/arrow.png"
+                alt=""
+                class="arrow-img"
+                width="10px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ************ The page *********** -->
+    <div class="container">
+      <!-- ************ Left-sidebar *********** -->
+      <div class="left-sidebar">
+        <!-- ************ important-links *********** -->
+        <div class="imp-links">
+          <a href="#"> <img src="images/news.png" alt="" />Latest News</a>
+          <a href="#"> <img src="images/friends.png" alt="" />Friends</a>
+          <a href="#"> <img src="images/group.png" alt="" />Group</a>
+          <a href="#">
+            <img src="images/marketplace.png" alt="" />marketplace</a
+          >
+          <a href="#"> <img src="images/watch.png" alt="" />Watch</a>
+          <a href="#"> See More</a>
+        </div>
+
+        <!-- ************ shortcut-links *********** -->
+        <div class="shortcut-links">
+          <p>Your Shortcuts</p>
+          <a href="#">
+            <img src="images/shortcut-1.png" alt="" /> Web Developers</a
+          >
+          <a href="#">
+            <img src="images/shortcut-2.png" alt="" /> Web Design Course</a
+          >
+          <a href="#">
+            <img src="images/shortcut-3.png" alt="" /> Full Stack Development</a
+          >
+          <a href="#">
+            <img src="images/shortcut-4.png" alt="" /> Website Experts</a
+          >
+        </div>
+      </div>
+
+      <!-- ************ main-content *********** -->
+      <div class="main-content">
+        <!-- ************ story-section *********** -->
+        <div class="story-gallery">
+          <div class="story story1">
+            <img src="images/upload.png" alt="" />
+            <p>Post Story</p>
+          </div>
+          <div class="story story2">
+            <!-- <img src="backgrounds/7 - Copy.png" alt="" /> -->
+            <p>fsfs1</p>
+          </div>
+          <div class="story story3">
+            <!-- <img src="backgrounds/10 - Copy.jpg" alt="" /> -->
+            <p>fsfs2</p>
+          </div>
+          <div class="story story4">
+            <!-- <img src="backgrounds/6 - Copy.jpg" alt="" /> -->
+            <p>fsfs3</p>
+          </div>
+          <div class="story story5">
+            <!-- <img src="backgrounds/23 - Copy.png" alt="" /> -->
+            <p>fsfs4</p>
+          </div>
+        </div>
+
+        <!-- ************ write-post-section *********** -->
+        <div class="write-post-container">
+          <div class="user-profile">
+            <img src="backgrounds/14 - Copy.jpg" alt="" />
+            <div>
+              <p>Vortex</p>
+              <small>Public <i class="fas fa-globe-americas"></i></small>
+            </div>
+          </div>
+
+          <div class="post-input-container">
+            <textarea
+              rows="3"
+              placeholder="What's on your mind, Vortex?"
+            ></textarea>
+
+            <div class="add-post-links">
+              <a href="#"
+                ><img src="images/live-video.png" alt="" /> Live Video</a
+              >
+              <a href="#"><img src="images/photo.png" alt="" /> Photo Video</a>
+              <a href="#"
+                ><img src="images/feeling.png" alt="" /> Feeling Activity</a
+              >
+              <button type="button" class="post-button">Post</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ************ posts-section *********** -->
+        <div>
+          <!-- ************ post-1 *********** -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="backgrounds/14 - Copy.jpg" alt="" />
+                <div>
+                  <p>Vortex</p>
+                  <span>June 24 2011, 13:40 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">Hey!!, i Hope you are doing Fine.</p>
+            <img src="backgrounds/61 - Copy.jpg" alt="" class="post-img" />
+
+            <div class="activity-container">
+              <div>
+                <a href="#" class="activity"
+                  ><i class="far fa-thumbs-up icons"></i> 120</a
+                >
+              </div>
+              <div>
+                <a href="#" class="activity"
+                  ><i class="far fa-comments icons"></i> 35</a
+                >
+              </div>
+              <div>
+                <a href="#" class="activity"
+                  ><i class="fas fa-share icons"></i> 10</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- ************ post-2 *********** -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="backgrounds/14 - Copy.jpg" alt="" />
+                <div>
+                  <p>Vortex</p>
+                  <span>June 24 2011, 13:40 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">Hey!!, i Hope you are doing Fine.</p>
+            <img src="backgrounds/62 - Copy.jpg" alt="" class="post-img" />
+
+            <div class="activity-container">
+              <a href="#" class="activity"
+                ><i class="far fa-thumbs-up icons"></i> 120</a
+              >
+              <a href="#" class="activity"
+                ><i class="far fa-comments icons"></i> 35</a
+              >
+              <a href="#" class="activity"
+                ><i class="fas fa-share icons"></i> 10</a
+              >
+            </div>
+          </div>
+
+          <!-- ************ post-3 *********** -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="backgrounds/14 - Copy.jpg" alt="" />
+                <div>
+                  <p>Vortex</p>
+                  <span>June 24 2011, 13:40 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">Hey!!, i Hope you are doing Fine.</p>
+            <img src="backgrounds/63 - Copy.jpg" alt="" class="post-img" />
+
+            <div class="activity-container">
+              <a href="#" class="activity"
+                ><i class="far fa-thumbs-up icons"></i> 120</a
+              >
+              <a href="#" class="activity"
+                ><i class="far fa-comments icons"></i> 35</a
+              >
+              <a href="#" class="activity"
+                ><i class="fas fa-share icons"></i> 10</a
+              >
+            </div>
+          </div>
+
+          <!-- ************ post-4 *********** -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="backgrounds/14 - Copy.jpg" alt="" />
+                <div>
+                  <p>Vortex</p>
+                  <span>June 24 2011, 13:40 pm</span>
+                </div>
+              </div>
+              <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">Hey!!, i Hope you are doing Fine.</p>
+            <img
+              src="backgrounds/orange-artistic-56-1920x1080.jpg"
+              alt=""
+              class="post-img"
+            />
+
+            <div class="activity-container">
+              <a href="#" class="activity"
+                ><i class="far fa-thumbs-up icons"></i> 120</a
+              >
+              <a href="#" class="activity"
+                ><i class="far fa-comments icons"></i> 35</a
+              >
+              <a href="#" class="activity"
+                ><i class="fas fa-share icons"></i> 10</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ************ load-more-btn *********** -->
+        <button type="button" class="load-more-btn">Load More</button>
+      </div>
+
+      <!-- ************ Right-sidebar *********** -->
+      <div class="right-sidebar">
+        <div class="sidebar-title">
+          <h4>Events</h4>
+          <a href="#">See All</a>
+        </div>
+
+        <!-- ************ Events-Section*********** -->
+        <div
+          style="
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          "
+        >
+          <!-- ************ Event 1 *********** -->
+          <div class="event">
+            <div class="left-event">
+              <h3>18</h3>
+              <span>March</span>
+            </div>
+            <div class="right-event">
+              <h4>Social Media</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+              <a href="#"> More info </a>
+            </div>
+          </div>
+
+          <!-- ************ Event 2 *********** -->
+          <div class="event">
+            <div class="left-event">
+              <h3>22</h3>
+              <span>June</span>
+            </div>
+            <div class="right-event">
+              <h4>Mobile Marketing</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Willson Tech Park</p>
+              <a href="#"> More info </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ************ Ads-Section*********** -->
+        <div
+          style="
+            margin-bottom: 30px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          "
+        >
+          <div class="sidebar-title">
+            <h4>Advertisment</h4>
+            <a href="#">Close</a>
+          </div>
+          <img src="backgrounds/58.jpg" class="sidebar-ads alt="">
+        </div>
+
+        <!-- ************ Conversations-Section*********** -->
+        <div>
+          <div class="sidebar-title">
+            <h4>Conversations</h4>
+            <a href="#">Hide Chat</a>
+          </div>
+
+          <!-- ************ Conversations 1 *********** -->
+          <div class="online-list">
+            <div class="online">
+              <img src="backgrounds/7 - Copy.png" alt="" />
+            </div>
+            <p>fsfs1</p>
+          </div>
+
+          <!-- ************ Conversations 2 *********** -->
+          <div class="online-list">
+            <div class="online">
+              <img src="backgrounds/10 - Copy.jpg" alt="" />
+            </div>
+            <p>fsfs2</p>
+          </div>
+
+          <!-- ************ Conversations 3 *********** -->
+          <div class="online-list">
+            <div class="offline">
+              <img src="backgrounds/23 - Copy.png" alt="" />
+            </div>
+            <p>fsfs3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ************ Footer *********** -->
+    <div class="footer">
+      <p>
+        Copyright 2021 - Vortex <span class="emoji-animation">&#128156;</span>
+      </p>
+    </div>
+
+    <!-- ************ JAVA SCRIPT*********** -->
+    <script src="script.js"></script>
+  </body>
+</html>
